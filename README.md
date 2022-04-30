@@ -4,6 +4,7 @@
 
 ## 프론트
 
+- 개발언어: typescript
 - 프레임워크: nextjs
 - 상태관리: redux, redux-saga
 - UI: styled-components
@@ -11,6 +12,7 @@
 
 ## 백엔드
 
+- 개발언어: javascript
 - 프레임워크: express
 - 데이터베이스: mySQL
 - 크롤링: selenium
