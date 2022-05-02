@@ -2,9 +2,10 @@ import React from "react";
 import type { AppProps } from "next/app";
 import Head from "next/head";
 import { ThemeProvider } from "styled-components";
-import { GlobalStyle } from "../styles/global-style";
-import { theme } from "../styles/theme";
+import GlobalStyle from "../styles/global-style";
+import { lightTheme } from "../styles/theme";
 import wrapper from "../store/configureStore";
+import { PageContainer } from "../common/PageContainer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -14,8 +15,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <title>boilerplate</title>
       </Head>
       <GlobalStyle />
-      <ThemeProvider theme={theme}>
-        <Component {...pageProps} />
+      <ThemeProvider theme={lightTheme}>
+        <PageContainer>
+          <Component {...pageProps} />
+        </PageContainer>
       </ThemeProvider>
     </>
   );
