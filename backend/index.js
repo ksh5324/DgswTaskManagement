@@ -8,6 +8,9 @@ const port = 3080;
 
 app.use(cors());
 
+const auth = require("./router/auth");
+app.use("/auth", auth);
+
 app.get("/", (req, res) => res.send("Hello World!"));
 
 app.listen(port, () => {
