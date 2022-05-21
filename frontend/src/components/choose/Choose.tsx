@@ -33,17 +33,17 @@ const Choose: NextComponentType = () => {
       </svg>
       <div className="des">반을 선택하세요.</div>
       <div className="button-con">
-        <Link href="class1">
+        <Link href="class/1">
           <a>
             <button>1반</button>
           </a>
         </Link>
-        <Link href="class2">
+        <Link href="class/2">
           <a>
             <button>2반</button>
           </a>
         </Link>
-        <Link href="class3">
+        <Link href="class/3">
           <a>
             <button>3반</button>
           </a>
