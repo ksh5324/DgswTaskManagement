@@ -28,6 +28,52 @@ const TableHeader = ({ choose, changeChoose }: any) => {
           color={choose === 2 ? "white" : "black"}
           onClick={() => changeChoose(2)}
         >
+          <svg
+            width="20"
+            height="26"
+            viewBox="0 0 20 26"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M13 3C13 2.20435 12.6839 1.44129 12.1213 0.87868C11.5587 0.316071 10.7956 6.00699e-08 10 0C9.20435 -6.00699e-08 8.44129 0.31607 7.87868 0.878679C7.31607 1.44129 7 2.20435 7 3L8.57255 3C8.57255 2.62142 8.72294 2.25834 8.99064 1.99064C9.25834 1.72294 9.62142 1.57255 10 1.57255C10.3786 1.57255 10.7417 1.72294 11.0094 1.99064C11.2771 2.25834 11.4275 2.62142 11.4275 3H13Z"
+              fill="white"
+            />
+            <rect
+              width="5.08379"
+              height="1.73351"
+              rx="0.866755"
+              transform="matrix(-0.00169885 0.999999 -0.999999 -0.00170001 20 2.42969)"
+              fill="white"
+            />
+            <rect x="11" y="2" width="9" height="2" rx="1" fill="white" />
+            <rect
+              width="5.08379"
+              height="1.73351"
+              rx="0.866755"
+              transform="matrix(0.00169885 0.999999 0.999999 -0.00170001 0 2.42969)"
+              fill="white"
+            />
+            <rect
+              width="9"
+              height="2"
+              rx="1"
+              transform="matrix(-1 0 0 1 9 2)"
+              fill="white"
+            />
+            <rect y="6" width="20" height="2" rx="1" fill="white" />
+            <rect x="1" y="6" width="2" height="20" rx="1" fill="white" />
+            <rect x="17" y="6" width="2" height="20" rx="1" fill="white" />
+            <rect x="2" y="24" width="16" height="2" fill="white" />
+            <rect x="4" y="9" width="8" height="2" rx="1" fill="white" />
+            <rect x="4" y="21" width="8" height="2" rx="1" fill="white" />
+            <rect x="4" y="17" width="8" height="2" rx="1" fill="white" />
+            <rect x="4" y="13" width="8" height="2" rx="1" fill="white" />
+            <rect x="13" y="9" width="3" height="2" rx="1" fill="white" />
+            <rect x="13" y="21" width="3" height="2" rx="1" fill="white" />
+            <rect x="13" y="17" width="3" height="2" rx="1" fill="white" />
+            <rect x="13" y="13" width="3" height="2" rx="1" fill="white" />
+          </svg>
           과제
         </Button>
       </div>
