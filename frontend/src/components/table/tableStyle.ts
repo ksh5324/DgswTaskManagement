@@ -169,3 +169,5 @@ export const TimeTableContainer = styled.div`
     border-radius: 0px 0px 20px 0px;
   }
 `;
+
+export const TaskContainer = styled.div``;
