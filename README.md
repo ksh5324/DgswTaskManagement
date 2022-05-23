@@ -29,8 +29,10 @@
 (프로토타입)
 
 1. 반 선택 페이지
-   ![page1](./REDME/page1.png)
+   ![page1](./REDME/class.png)
 2. 시간표 확인 페이지
-   ![page1](./REDME/page2.png)
+   ![page1](./REDME/timeTable.png)
 3. 과제 확인 페이지
-   ![page1](./REDME/page3.png)
+   ![page1](./REDME/task.png)
+4. 로그인
+   ![page4](./REDME/login.png)
