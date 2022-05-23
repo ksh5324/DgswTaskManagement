@@ -170,4 +170,99 @@ export const TimeTableContainer = styled.div`
   }
 `;
 
-export const TaskContainer = styled.div``;
+export const TaskContainer = styled.div`
+  .main {
+    height: 365px;
+    overflow-y: scroll;
+  }
+  details {
+    width: 100%;
+    background: #ffffff;
+    position: relative;
+
+    /* .summary-content {
+      border-top: 1px solid #e2e8f0;
+      cursor: default;
+      padding: $details-padding;
+      font-weight: 300;
+      line-height: 1.5;
+    } */
+
+    summary {
+      height: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      color: #000000;
+      padding-right: 34px;
+      padding: 24px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        cursor: pointer;
+        background: rgba(100, 100, 100, 0.1);
+      }
+    }
+
+    /* .summary-chevron-up svg {
+      opacity: 0.5;
+    } */
+
+    .summary-chevron-up,
+    .summary-chevron-down {
+      pointer-events: none;
+      /* position: absolute;
+      top: 0.75em;
+      right: 0; */
+    }
+
+    summary::-webkit-details-marker {
+      display: none;
+    }
+  }
+  ul {
+    background: #e6ecf7;
+    list-style: inside;
+  }
+  li {
+    display: flex;
+    align-items: center;
+    height: 61px;
+    padding-left: 90px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+
+    color: #000000;
+  }
+  .but {
+    width: 100%;
+    height: 113px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button {
+      width: 736px;
+      height: 69px;
+      background: #003aad;
+      border-radius: 39px;
+      font-family: "Inter";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #ffffff;
+    }
+  }
+`;
