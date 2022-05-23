@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useCallback, useState } from "react";
 import { LayoutConatiner } from "./layoutStyle";
+import Login from "./Login";
 
 const Layout = () => {
+  const [toggle, setToggle] = useState(false);
+  const toggleClick = useCallback(() => {
+    setToggle((prev) => !prev);
+  }, []);
+
   return (
     <LayoutConatiner>
       <div className="title">DGSW</div>
@@ -11,6 +17,7 @@ const Layout = () => {
         viewBox="0 0 18 18"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        onClick={toggleClick}
       >
         <rect width="4" height="4" rx="1" fill="#003AAD" />
         <rect x="7" width="4" height="4" rx="1" fill="#003AAD" />
@@ -22,7 +29,6 @@ const Layout = () => {
         <rect y="14" width="4" height="4" rx="1" fill="#003AAD" />
         <rect y="7" width="4" height="4" rx="1" fill="#003AAD" />
       </svg>
-
       <div className="alert">
         <svg
           width="17"
@@ -38,6 +44,7 @@ const Layout = () => {
         </svg>
         로그인을 하여 관리자 모드에 접속하십시오
       </div>
+      {toggle ? <Login show={1} /> : <Login show={0} />}
     </LayoutConatiner>
   );
 };
