@@ -6,6 +6,7 @@ import GlobalStyle from "../styles/global-style";
 import { lightTheme } from "../styles/theme";
 import wrapper from "../store/configureStore";
 import { PageContainer } from "../common/PageContainer";
+import Layout from "../common/Layout/Layout";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -17,6 +18,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       <GlobalStyle />
       <ThemeProvider theme={lightTheme}>
         <PageContainer>
+          <Layout />
           <Component {...pageProps} />
         </PageContainer>
       </ThemeProvider>
